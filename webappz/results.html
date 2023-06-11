@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Mostrar Datos en Formulario</title>
+</head>
+<body>
+  
+<h4>SISTEMA DE CONSULTA DE RESULTADOS DE LA ESCALA DE ACROFOBIA</h4>
+
+  <div class="VHISS">
+    <div class="elements">
+    <form id="formulario">
+      <h4>DATOS DEL PACIENTE A CONSULTAR</h4>
+      <p>Siga las instrucciones para consultar un resultado individual de la escala</p>
+      <div class="input-box">  
+      <label class="datos" for="id"><p>escriba el id del paciente a consultar</p></label>
+      <input type="text" id="id1" name="id1" required>
+      <button class="boton" type="button" id="btn-consultar">Consultar</button>
+      </div>
+    </form>
+  </div>
+  </div>
+
+<div class="VHISS">
+<h4>RESULTADOS DEL PACIENTE CONSULTADO</h4>
+<div class="elements">
+  <p>Use las barras espaciadoras para validar la información completa</p>
+  <div class="input-box"> 
+  <div id="mensaje"></div>
+      <div id="resultado-container">
+      <iframe class="frame" id="resultado-iframe" width="35%" height="300"></iframe>
+  </div>
+  </div>
+  <button class="button" id="btn-imprimir">Imprimir resultado</button>
+
+</div>
+</div>
+
+  <script src="/assets/jscontrol/consulta.js"></script>
+
+
+<div class="elements">
+    <button class="button" onclick="location.href='/index.html'"><h5>regresar al inicio</h5></button><br>
+</div>
+</body>
+</html>

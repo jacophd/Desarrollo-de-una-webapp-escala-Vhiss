@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\styles.css">
+
+    <title>CLASIFICACIÓN DSM IV PARA ACROFOBIA</title>
+
+</head>
+
+<body>
+
+<h4>FORMULARIO DE ESCALA DE ACROFOBIA</h4>  
+
+<P>Definición de acrofobia: se trata de la intolerancia visual a las alturas, o fobia a las alturas, el presente cuestionario evalua de forma simple si usted tiene riesgo de padecer esta patología.<br> 
+</P>
+<P>Para todas las preguntas escriba 1 si ha padecido el síntoma o 0 si no lo ha padecido, si tiene dudas pregunte a la enfermera del área.<br>
+</P>
+
+    
+    <div class="VHISS">
+    
+<form id="formulario" action="http://localhost/webappz/assets/server/guardar.php" method="POST">
+    <div class="box">
+        <h4>NOMBRE</h4>
+        <p>Escriba su nombre</p>
+        <div class="input-box">
+        <input id="NoCriterio" name="nombre" class="datos" type="text" placeholder="nombre completo"/>
+        </div><br>
+        <h4>CÉDULA</h4>
+        <p>Escriba su documento de identidad</p>
+        <div class="input-box">
+        <input id="NoCriterio2" name="cedul" class="datos" type="text" placeholder="documento"/>
+        </div><br>
+        <h4>¿HA PRESENTADO ALGUNO DE LOS SIGUIENTES SINTOMAS  CUANDO SE ENCUENTRA EN UN SITIO ALTO?</h4>
+        <p>Temblor, Ansiedad, Palpitaciones, Sudoración</p>
+        <div class="input-box">
+        <input id="criterio_1" name="criteriO1" class="datos" type="number" placeholder="Escriba 1 si se cumple el criterio o 0 si no se cumple"/>
+        </div><br>
+        <h4>¿HA PRESENTADO ALGUNO DE LOS SIGUIENTES SINTOMAS CUANDO SE ENCUENTRA EN UN SITIO ALTO?</h4>
+        <p>Dolor de cabeza, Mareo, Debilidad en las rodillas, Inestabilidad de la postura y la marcha, Nauseas/malestar en el estómago, Opresión en el pecho, Pánico, Imagen mental de caída, Trastorno de la marcha.</p>
+        <div class="input-box">
+        <input id="criterio_2" name="criteriO2" class="datos" type="number" placeholder="Escriba 1 si se cumple el criterio o 0 si no se cumple"/>
+        </div><br>
+        <h4>¿HA PRESENTADO INTOLERANCIA VISUAL A LAS ALTURAS EN LOS ÚLTIMOS 6 MESES?</h4>
+        <p>Intolerancia visual a las alturas significa temor, o vertigo que se desencadena cuando se está en un sitio alto</p>
+        <div class="input-box">
+        <input id="criterio_3" name="criteriO3" class="datos" type="number" placeholder="Escriba 1 si se cumple el criterio o 0 si no se cumple"/>
+        </div><br>
+        <h4>¿SIENTE MIEDO INTENSO O EXTREMADAMENTE FUERTE CUANDO SE EXPONE A ALTURAS?</h4>
+        <p>Estar o escalar una torre, Estar o caminar sobre un puente, Estar o caminar por gradas, Estar o subir por escaleras, Estar o caminar en un balcón, Mirar por una ventana , Estar o caminar por un andamio, Estar o caminar por un techo, Montar un carrusel, Montar en una canoa, Practicando montañismo.</p>
+        <div class="input-box">
+        <input id="criterio_4" name="criteriO4" class="datos" type="number" placeholder="Escriba 1 si se cumple el criterio o 0 si no se cumple"/>
+        </div><br>
+        <h4>¿DE ANTEMANO TRATO DE EVITAR LA EXPOSICIÓN A LAS ALTURAS?</h4>
+        <p>Evita trabajos en alturas, atracciones mecánicas, edificios altos.</p>
+        <div class="input-box">
+        <input id="criterio_5" name="criteriO5" class="datos" type="number" placeholder="Escriba 1 si se cumple el criterio o 0 si no se cumple"/>
+        </div><br>
+        <input type="submit" id="analizar" value="analizar" class="boton"/>
+        <p>Al dar clic en analizar sus resultados se cargaran en la base de datos de la IPS Pajarito y podrán ser analizados por el médico que lo atenderá en consulta</p><br>
+    </div>
+        <div class="result">
+        <input name="acrofobia1" type="hidden" id="acrofobia_1" readonly onmousedown="return false;" >
+        </div>
+</form>
+    <div class="elements">
+        <button class="button" onclick="location.href='/index.html'"><h5>regresar al inicio</h5></button><br>
+    </div>
+    <script type="text/javascript" src="assets\js\acrofobia.js"></script>
+</body>
+
+
+</html>
